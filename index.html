@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" charset="utf-8" />
-		<title>清泽心雨招生</title>
-		<style type="text/css">
-	  p{font-size:30px;
-		color:darkblue;
-		font-weight:bold;}
-		div{position:relative;
-		right:10px;
-		top:0;}</style>
+		<meta charset="utf-8" />
+		<title>招生网页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="http://cdn.bootcss.com/twitter-bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/flat-ui.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
 	</head>
-	<div id="div"<body background="img/05.jpg" align="center">
-		<body background="img/05.jpg" align="center">
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清泽心雨招生了，欢迎广大同学踊跃报名</p>
-	<form  method="post" action="save.php">
-	<form action="save.php" method="post" >
-    <label>性别:</label>
-    <label>男</label>
-    <input type="radio" value="1"  name="gender" />
-    <label>女</label>
-    <input type="radio" value="2"  name="gender" />
-    </form>
-	<form action="save.php" method="post" >
-    <label>意向部门:</label>
-    <select>
-      <option value="视频集团">视频集团</option>
-      <option value="网络安全部" selected="selected">网络安全部</option>
-      <option value="办公室">办公室</option>
-      <option value="公关部">公关部</option>
-      <option value="新闻集团">新闻集团</option>
-      <option value="技术开发部与视觉设计部">技术开发部与视觉设计部</option>
-    </select>
-</form>
-<h2>期待你们的加入,来自五湖四海的英豪们。让我们共同谱写新的篇章。</h2>
-<img src="img/2345_image_file_copy_1.jpg" >
-<form  method="post" action="save.php">
-    <label for="myName">姓名：</label>
-    <input type="text" value=" " name="myName " /><br />
-    <label for="major">专业： </label>
-    <input type="text" value=" " name="major" /><br />
-    <label for="class">班级：</label>
-    <input type="text" value=" " name="class" /><br />
-</form>
-    <form action="save.php" method="post" ><br />
-    <label>个人简介(特长)：</label>
-    <textarea  cols="50" rows="10"></textarea>
-    </form>
-    <input type="submit" value="提交"  name="reset" />
-    </form>
-    <h3>感谢你对清泽心雨的支持</h3>
-</body></div>
+	<body background="img/magazine-unlock-01-2.3.654-_af3d0aa9d22e475691ef7.jpg">
+   
+
+  <script>$('[data-toggle="radio"]').radiocheck();</script>
+   <h1 class="form-control" id="bt">清泽心雨招新</h1>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-6 ">
+     <span>姓名*</span>
+     <input type="text" id="name" class="form-control"placeholder="你的名字"/>
+	</div>
+	<div class="col-md-6">
+      性别:
+ <label class="radio">
+            <input name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio" type="radio">男
+          </label>
+	 <label class="radio">
+            <input name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" class="custom-radio" type="radio">女
+          </label>
+    </div>
+   </div>
+   <br/>
+   <div class="row" >
+    <div class="col-md-6">
+     <span>电话号码</span>
+     <input type="text" class="form-control"placeholder="电话" />
+	</div>
+    <div class="col-md-6">
+     <span>邮箱地址</span>
+     <input type="text" class="form-control" placeholder="邮箱"/>
+	</div>
+	<div class="col-md-6">
+     <span>专业名称</span>
+     <input type="text" class="form-control" placeholder="专业"/>
+	</div>
+   </div>
+   <br/>
+   <div class="row">
+    <div class="col-md-6">
+
+  <select class="select2-container form-control select select-primary mbl" data-toggle="select" >
+  <optgroup label="网络安全部">
+    <option value="0">蓝之青</option>
+  </optgroup>
+  <optgroup label="视频集团">
+    <option value="2">微效坊</option>
+    <option value="3">微影部</option>
+    <option value="4">电视台</option>
+  </optgroup>
+ </select>
+	</div>
+    <div class="col-md-6">
+     <p>个人简介</p>
+     <textarea rows="10" cols="30" class="form-control"></textarea>
+    </div>
+   </div>
+    <br/>	
+	<div class="col-md-3">
+	</div>
+	<div class="col-md-6">
+     <input class="btn btn-hg btn-primary" type="button" value="提交  ">
+	</div>
+   </div>
+
+	</body>
 </html>
